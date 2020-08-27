@@ -11,7 +11,7 @@ pipeline{
             }
         }
         // upload war file to nexus i.e. only ones in dev branch
-        stage('Upload to Nexus'){
+        stage('Upload to Nexuss'){
             when {
                 branch 'dev'
             }

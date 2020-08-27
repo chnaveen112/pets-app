@@ -5,7 +5,7 @@ pipeline{
     }
     // githubPush() trigger demo
     tools {
-        maven 'maven'
+        maven 'mavan'
     }
     stages{
         // build only ones i.e. in dev branch

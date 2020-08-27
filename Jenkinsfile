@@ -31,7 +31,7 @@ pipeline{
                 branch 'dev'
             }
             steps{
-                echo "deploying to dev environment"
+                echo "deploying to dev environmen"
             }
         }
         stage('Deploy to staging'){

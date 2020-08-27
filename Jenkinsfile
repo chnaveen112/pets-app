@@ -1,5 +1,9 @@
 pipeline{
     agent any
+    tools {
+  maven 'maven3'
+}
+
     stages{
         // build only ones i.e. in dev branch
         stage('Build'){

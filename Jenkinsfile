@@ -14,7 +14,7 @@ pipeline{
                 branch 'dev'
             }
             steps{
-                git branch: 'dev', credentialsId: 'gitt', url: 'https://github.com/chnaveen112/pets-app'
+                sh 'mvn clean package'
                 echo "build success"
             }
         }

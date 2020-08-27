@@ -14,7 +14,7 @@ pipeline{
                 branch 'dev'
             }
             steps{
-                sh "mvn clean package"
+                git branch: 'dev', credentialsId: 'gitt', url: 'https://github.com/chnaveen112/pets-app'
             }
         }
         // upload war file to nexus i.e. only ones in dev branch

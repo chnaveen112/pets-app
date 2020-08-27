@@ -15,6 +15,7 @@ pipeline{
             }
             steps{
                 git branch: 'dev', credentialsId: 'gitt', url: 'https://github.com/chnaveen112/pets-app'
+                echo "build success"
             }
         }
         // upload war file to nexus i.e. only ones in dev branch
